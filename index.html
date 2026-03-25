@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasters Bio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="intro-screen">
+        <canvas id="intro-canvas"></canvas>
+    </div>
+
+    <canvas id="starfield-bg"></canvas>
+    
+    <div id="content-wrapper">
+        <header class="hero slide-up">
+            <h1 class="flicker-title">Pasters</h1>
+            <p class="subtitle">Отсек: Биография. Статус: На связи.</p>
+            
+            <div class="panel countdown-panel">
+                <h3>До следующего цикла (ДР):</h3>
+                <div id="countdown">Загрузка координат...</div>
+            </div>
+        </header>
+
+        <main>
+            <section class="panel about-section slide-up delay-1">
+                <h2>Личное дело</h2>
+                <div class="info-grid">
+                    <div class="info-item"><span>Имя:</span> <strong>Кирилл</strong></div>
+                    <div class="info-item"><span>Ник:</span> Pasters</div>
+                    <div class="info-item"><span>Возраст:</span> <strong>13</strong></div>
+                    <div class="info-item"><span>Локация:</span> <strong>Ульяновск, Россия</strong></div>
+                </div>
+                
+                <div class="bio-content">
+                    <h3>Биография</h3>
+                    <p>Обычный человек из Ульяновска, ранее снимал контент про Windows, на данный момент состоит в 3LES League и снимает на статерскую тематику.</p>
+                </div>
+				
+				<div class="music-player">
+                <img src="1.png" alt="Обложка трека" class="player-cover">
+                <div class="player-info">
+                    <div class="song-title">дети немой страны</div>
+                    <div class="song-author">конец солнечных дней</div>
+                </div>
+                <div class="player-controls">
+                    <button id="play-pause-btn" class="control-btn">▶</button>
+                    <div class="volume-container">
+                        <span class="volume-icon">🔊</span>
+                        <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="0.5">
+                    </div>
+                </div>
+                <audio id="bg-audio" src="1.mp3"></audio>
+            </div>
+            </section>
+
+            <section class="panel friends-section slide-up delay-2">
+                <h2>Лучшие друзья</h2>
+                <div class="friends-grid">
+                    <div class="friend-card">
+                        <div class="card-front">
+                            <h3>Reloster</h3>
+                            <p class="status-online">Online</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Познакомились в 2021, общались в комментариях, на данный момент хорошие друзья.</p>
+                        </div>
+                    </div>
+                    <div class="friend-card">
+                        <div class="card-front">
+                            <h3>Quvinor</h3>
+                            <p class="status-offline">Offline</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Особо не помню нашу историю, максимум помню что познакомились в том же 2021, и втроем с релостером хорошо ладили.</p>
+                        </div>
+                    </div>
+                    <div class="friend-card">
+                        <div class="card-front">
+                            <h3>Memunasik</h3>
+                            <p class="status-away">Away</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Нас познакомил Quvinor.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="panel pc-section slide-up delay-3">
+                <h2>Конфиг ПК</h2>
+                <ul class="pc-specs-list">
+                    <li><span>Процессор:</span> <strong>Intel Core i5-13400</strong></li>
+                    <li><span>Видеокарта:</span> <strong>NVidia GeForce RTX 3060</strong></li>
+                    <li><span>Память ОЗУ:</span> <strong>32GB DDR4</strong></li>
+                    <li><span>Мат. плата:</span> <strong>Asus Prime B760M-A WiFi D4</strong></li>
+                    <li><span>SSD:</span> <strong>Samsung SSD 980 1TB</strong></li>
+                </ul>
+            </section>
+			<a href="https://cawiworld.github.io" class="cawi-back-btn">
+                <span class="btn-icon">🌌</span> Back to CaWiWorld
+            </a>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
